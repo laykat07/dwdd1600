@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Receive news to be in the loop!">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="ski.css">
+
+    <meta charset="UTF-8">
+    <title>Betterski: Get News</title>
+</head>
+
+<body>
+    <!-- start the page header -->
+    <header>
+        <span>Betterski - Get News</span>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="skiers.html">Skiers</a></li>
+            <li class="active"><a href="notification.html">Get News</a></li>
+        </ul>
+    </nav>
+
+    <!-- start the page main -->
+    <main>
+        <h1>Sign Up for Notifications</h1>
+
+        <form method="get" class="myform" action="lookout.html">
+
+           <fieldset>
+            <legend>Personal Information</legend>
+            <label>Full Name*<input type="text" name="name" required></label>
+            <label>Phone Number*<input type="tel" name="pnumber" required placeholder="123-456-7890"></label>
+            <label>Email*<input type="email" name="email" required></label>
+             </fieldset>
+
+            <fieldset>
+                <legend>Preferred News Method </legend>
+               <label><input type="radio" name="method" value="email"> Email</label>
+               <label><input type="radio" name="method" value="text"> Text</label>
+               <label><input type="radio" name="method" value="both"> Both</label>
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Content Preferences</legend>
+               <label><input type="checkbox" name="skill" value="chosen"> Tips and Drills</label>
+               <label><input type="checkbox" name="guides" value="chosen"> Resort Guides </label>
+               <label><input type="checkbox" name="fitness" value="chosen"> Personal Fitness</label>
+               <label><input type="checkbox" name="weather" value="chosen"> Weather Updates </label>
+               <label><input type="checkbox" name="media" value="chosen"> Ski Stories and Media</label>
+               </fieldset>
+
+
+               <fieldset>
+                <legend>Content Frequency</legend>
+                <label><select name="time">
+                <option value="none">Select Here</option>
+                <option value="daily">Daily Brief</option>
+                <option value="weekly">Weekly Digest</option>
+                <option value="monthly">Monthly Roundup</option>
+                <option value="seasonal">Seasonal Only</option>
+               </select>
+               </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Comments</legend>
+                <textarea name="comments" placeholder="Details"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Sign Up for News">
+        </form>
+
+    </main>
+
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2026 &bull; Layla Godoy</p>
+    </footer>
+</body>
+
+</html>
